@@ -1,0 +1,160 @@
+@font-face {
+   font-family: 'EB Garamond', 'sans-serif';
+   src: url('fonts/EBGaramond-Regular.ttf') format('truetype');
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'EB Garamond', 'sans-serif';
+}
+
+header, 
+.first, 
+.second, 
+.third  {
+   border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.social-icons li img {
+   width: 20px;
+   height: 20px;
+}
+
+.first, 
+.second, 
+.third {
+   overflow: hidden;
+   align-items: center;
+   align-content: center;
+}
+
+.first img, 
+.second img, 
+.third img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+.features-block {
+   padding: 20px 50px;
+}
+
+
+.features-block img {
+   width: 40px;
+   height: 40px;
+   margin: 20px;
+}
+
+.features-block p {
+   text-align: center;
+   margin: 10px;
+}
+
+.form {
+   font-weight: bold;
+   margin: 5px;
+}
+
+.container {
+   max-width: 800px;
+}
+
+section {
+   padding: 50px 0px;
+}
+
+p {
+   text-align: justify;
+}
+
+.carousel, 
+.carousel-item .row {
+   width: 100%;
+}
+
+.carousel-item ul,
+.carousel-item li {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   display: flex;
+}
+
+.carousel-item .col {
+   width: 330px;
+   position: relative;
+   margin: 0;
+   padding: 0;
+}
+
+.carousel-item img {
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
+   display: block;
+}
+
+.description {
+   padding: 15px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .5);
+   color: rgb(255, 255, 255);
+   text-align: center;
+   padding-top: 80px;
+   opacity: 0;
+   transition: all .5s;
+}
+
+.carousel-item .col:hover .description {
+   opacity: 1;
+}
+
+
+.foot-icon {
+   display: flex;
+   justify-content: center;
+   margin: 20px;
+}
+
+
+.foot-icon li {
+   list-style-type: none;
+}
+
+.foot-icon li img {
+   width: 40px;
+   height: 40px;
+   border: 1px solid #000;
+   border-radius: 50%;
+   padding: 8px;
+}
+
+footer .nav-link {
+   padding: 5px;
+}
+
+footer {
+   border-top: 1px solid rgb(180, 180, 180);
+}
+
+
+@media (max-width: 600px) {
+
+   .first img, 
+   .second img, 
+   .third img {
+      max-height: 400px;
+   }
+
+}
